@@ -1,5 +1,5 @@
 let input = document.getElementById("input");
-let charset = "1234567890+-*/.,%()b=c";
+let charset = "1234567890+-*/.,%()b=c^s";
 
 function Input(value) {
     console.log(value);
@@ -46,4 +46,21 @@ function Input(value) {
 
 function safeEvaluate(expression) {
     return new Function('return ' + expression)();
+}
+
+let darmode = false;
+function ToggleMode(){
+    darmode = !darmode;
+    if(darmode){
+        document.body.style.backgroundColor = "#333";
+        document.body.style.color = "white";
+        document.getElementById("calculator").style.backgroundColor = "#333";
+        document.getElementById("calculator").style.color = "white";
+    }
+    else{
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        document.getElementById("calculator").style.backgroundColor = "white";
+        document.getElementById("calculator").style.color = "black";
+    }
 }
