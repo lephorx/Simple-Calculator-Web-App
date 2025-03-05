@@ -17,6 +17,7 @@ A simple and responsive web-based calculator for basic arithmetic operations. De
 ## ⚡ How to Use  
 1. Open `index.html` in your browser  
 2. Click the buttons to perform calculations  
+or go to the online webpage: https://ramon-3oo.github.io/Simple-Calculator-Web-App/
 
 ### Optional: Run Locally with a Simple Server  
 ```sh
